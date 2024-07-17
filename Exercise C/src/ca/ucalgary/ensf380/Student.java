@@ -7,6 +7,11 @@ public class Student extends Person {
 	private Professor supervisor;
 	private double averageMark;
 	
+	//constructor
+	Student(String ID, double average) {
+		this.studentNumber = ID;
+		this.averageMark = average;
+	}
 	//setters & getters
 	public void setStudentNumber(String studentNumber) {
 		//student ID must have 8 digits
