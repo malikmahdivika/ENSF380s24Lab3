@@ -9,8 +9,8 @@ public class Student extends Person {
 	
 	//constructor
 	Student(String ID, double average) {
-		this.studentNumber = ID;
-		this.averageMark = average;
+		this.setStudentNumber(ID);
+		this.setAverageMark(average);
 	}
 	//setters & getters
 	public void setStudentNumber(String studentNumber) {
