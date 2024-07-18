@@ -54,6 +54,21 @@ public class Address {
 			return;
 		}
 	}
+	public String getStreet() {
+		return this.street;
+	}
+	public String getCity() {
+		return this.city;
+	}
+	public String getState() {
+		return this.state;
+	}
+	public String getPostalCode() {
+		return this.postalCode;
+	}
+	public String getCountry() {
+		return this.country;
+	}
 	
 	public boolean validate(String field) {
 		/* Whole addresses are hard to validate as they vary so much, but instead
@@ -61,8 +76,8 @@ public class Address {
 		 * will use this function directly.
 		 */
 		
-		//we assume that only letters, digits, and maybe # and . are allowed
-		Pattern pattern = Pattern.compile("^[A-Za-z0-9 #.]*$");
+		//we assume that only letters, digits, and maybe # ' and . are allowed
+		Pattern pattern = Pattern.compile("^[A-Za-z0-9' #.]*$");
 		if (pattern.matcher(field).find()) {
 			return true;
 		} else {

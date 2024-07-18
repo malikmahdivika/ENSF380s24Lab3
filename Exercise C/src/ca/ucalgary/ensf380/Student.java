@@ -14,7 +14,7 @@ public class Student extends Person {
 	}
 	//setters & getters
 	public void setStudentNumber(String studentNumber) {
-		//student ID must have 8 digits
+		//student ID is in 8 digits
 		if (Pattern.compile("^[0-9]{8}$").matcher(studentNumber).find()) {
 			this.studentNumber = studentNumber;
 		} else {
